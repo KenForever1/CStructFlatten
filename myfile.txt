@@ -1,0 +1,48 @@
+
+#ifndef MYSTRUCT_H
+#define MYSTRUCT_H
+struct Direction {
+    int front;
+    int back;
+    int left;
+    int right;
+};
+struct Test {
+    int xx;
+    int yy;
+};
+
+struct Pos {
+    struct Test test;
+    int x;
+    int y;
+    int z;
+};
+
+struct All {
+    int name;
+    struct Pos pos;
+    int gender;
+    struct Direction direction;
+};
+struct PosFlat{
+    int xx;
+    int yy;
+    int x;
+    int y;
+    int z;
+};
+struct AllFlat{
+    int name;
+    struct Test test;
+    int x;
+    int y;
+    int z;
+    int gender;
+    int front;
+    int back;
+    int left;
+    int right;
+};
+
+#endif //MYSTRUCT_H
